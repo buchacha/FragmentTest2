@@ -18,11 +18,5 @@ public class Fragment2 extends Fragment {
         return inflater.inflate(R.layout.fragment_2, container, false);
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        Bundle args = getArguments();
-        ((TextView) view.findViewById(R.id.textView2))
-                .setText("OBJECT NUMBER " + Integer.toString(args.getInt("POS")));
-    }
+
 }
